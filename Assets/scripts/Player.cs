@@ -13,13 +13,14 @@ public class Player : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         sp = GetComponent<SpriteRenderer>();
+        sp.flipX = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         anim.SetBool("isWalking", false);
-        sp.flipX = false;
+        
 
         if(Input.GetKey(KeyCode.LeftArrow)) { // for each movement, create a vector 3
             transform.Translate(-speed * Time.deltaTime , 0, 0);
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow)) { // for each movement, create a vector 3
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetBool("isWalking", true);
+            sp.flipX = false;
         } 
         if(Input.GetKey(KeyCode.UpArrow)) { // for each movement, create a vector 3
             transform.Translate(0, speed * Time.deltaTime, 0);

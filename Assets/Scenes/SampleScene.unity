@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 42070175}
   - component: {fileID: 42070174}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (27)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 48909501}
   - component: {fileID: 48909500}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (6)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 83767828}
   - component: {fileID: 83767827}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (1)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 137158511}
   - component: {fileID: 137158510}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (6)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 147926815}
   - component: {fileID: 147926814}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (29)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 150841352}
   - component: {fileID: 150841351}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (25)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 158961861}
   - component: {fileID: 158961860}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (2)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 169856707}
   - component: {fileID: 169856706}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (11)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,9 +1199,9 @@ GameObject:
   - component: {fileID: 193087036}
   - component: {fileID: 193087035}
   - component: {fileID: 193087039}
-  - component: {fileID: 193087038}
   - component: {fileID: 193087041}
   - component: {fileID: 193087040}
+  - component: {fileID: 193087042}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1282,7 +1282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193087034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -3, z: 0}
+  m_LocalPosition: {x: -4.026, y: -2.843, z: 0}
   m_LocalScale: {x: 2.189359, y: 2.439696, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1291,33 +1291,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &193087038
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193087034}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.028441384, y: -0.08424222}
-  - {x: -0.12810363, y: -0.09152607}
-  - {x: -0.15562737, y: 0.00284357}
-  - {x: -0.1562557, y: 0.06455907}
-  - {x: 0.016671237, y: 0.09688817}
-  - {x: 0.07176096, y: 0.028598918}
-  - {x: 0.025655832, y: -0.08424222}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &193087039
 Rigidbody2D:
   serializedVersion: 4
@@ -1376,6 +1349,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &193087042
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193087034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0043847016, y: 0.004918729}
+  serializedVersion: 2
+  m_Radius: 0.09359017
 --- !u!1 &214607331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1378,7 @@ GameObject:
   - component: {fileID: 214607335}
   - component: {fileID: 214607334}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (36)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1522,7 +1511,7 @@ GameObject:
   - component: {fileID: 268391322}
   - component: {fileID: 268391321}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (3)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1655,7 +1644,7 @@ GameObject:
   - component: {fileID: 268481888}
   - component: {fileID: 268481887}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.35.53 PM
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1788,7 +1777,7 @@ GameObject:
   - component: {fileID: 276894318}
   - component: {fileID: 276894317}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (15)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1921,7 +1910,7 @@ GameObject:
   - component: {fileID: 278633763}
   - component: {fileID: 278633762}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (33)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,7 +2043,7 @@ GameObject:
   - component: {fileID: 315367721}
   - component: {fileID: 315367720}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (14)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2187,7 +2176,7 @@ GameObject:
   - component: {fileID: 362186070}
   - component: {fileID: 362186069}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (2)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2320,7 +2309,7 @@ GameObject:
   - component: {fileID: 364120365}
   - component: {fileID: 364120364}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (10)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2453,7 +2442,7 @@ GameObject:
   - component: {fileID: 374716315}
   - component: {fileID: 374716314}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (26)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2586,7 +2575,7 @@ GameObject:
   - component: {fileID: 375279384}
   - component: {fileID: 375279383}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (29)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2719,7 +2708,7 @@ GameObject:
   - component: {fileID: 375587410}
   - component: {fileID: 375587409}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (9)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2852,7 +2841,7 @@ GameObject:
   - component: {fileID: 430262873}
   - component: {fileID: 430262872}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (34)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2985,7 +2974,7 @@ GameObject:
   - component: {fileID: 461648645}
   - component: {fileID: 461648644}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (20)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3236,7 +3225,7 @@ GameObject:
   - component: {fileID: 541430232}
   - component: {fileID: 541430231}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (31)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3369,7 +3358,7 @@ GameObject:
   - component: {fileID: 553626588}
   - component: {fileID: 553626587}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3502,7 +3491,7 @@ GameObject:
   - component: {fileID: 568011589}
   - component: {fileID: 568011588}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (30)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3635,7 +3624,7 @@ GameObject:
   - component: {fileID: 569658479}
   - component: {fileID: 569658478}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (21)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3768,7 +3757,7 @@ GameObject:
   - component: {fileID: 585686847}
   - component: {fileID: 585686846}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (10)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3901,7 +3890,7 @@ GameObject:
   - component: {fileID: 677029284}
   - component: {fileID: 677029283}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (28)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4034,7 +4023,7 @@ GameObject:
   - component: {fileID: 694867487}
   - component: {fileID: 694867486}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (26)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4167,7 +4156,7 @@ GameObject:
   - component: {fileID: 705818807}
   - component: {fileID: 705818806}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (33)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4300,7 +4289,7 @@ GameObject:
   - component: {fileID: 737341404}
   - component: {fileID: 737341403}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (16)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4433,7 +4422,7 @@ GameObject:
   - component: {fileID: 752901980}
   - component: {fileID: 752901979}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (8)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4566,7 +4555,7 @@ GameObject:
   - component: {fileID: 772610911}
   - component: {fileID: 772610910}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (34)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4686,6 +4675,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94, y: 0.44}
   m_EdgeRadius: 0
+--- !u!1001 &820318203
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_Name
+      value: ghost (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.252832
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1818106
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
 --- !u!1 &856241076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4699,7 +4749,7 @@ GameObject:
   - component: {fileID: 856241080}
   - component: {fileID: 856241079}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (21)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4832,7 +4882,7 @@ GameObject:
   - component: {fileID: 865760030}
   - component: {fileID: 865760029}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (10)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4965,7 +5015,7 @@ GameObject:
   - component: {fileID: 871347638}
   - component: {fileID: 871347637}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (30)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5098,7 +5148,7 @@ GameObject:
   - component: {fileID: 879840066}
   - component: {fileID: 879840065}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (37)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5231,7 +5281,7 @@ GameObject:
   - component: {fileID: 906070393}
   - component: {fileID: 906070392}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (24)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5364,7 +5414,7 @@ GameObject:
   - component: {fileID: 919116529}
   - component: {fileID: 919116528}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (5)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5608,7 +5658,7 @@ GameObject:
   - component: {fileID: 962107524}
   - component: {fileID: 962107523}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (2)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5741,7 +5791,7 @@ GameObject:
   - component: {fileID: 996723677}
   - component: {fileID: 996723676}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (5)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5874,7 +5924,7 @@ GameObject:
   - component: {fileID: 998875658}
   - component: {fileID: 998875657}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (23)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6007,7 +6057,7 @@ GameObject:
   - component: {fileID: 1031400320}
   - component: {fileID: 1031400319}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (7)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6140,7 +6190,7 @@ GameObject:
   - component: {fileID: 1104101616}
   - component: {fileID: 1104101615}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (19)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6273,7 +6323,7 @@ GameObject:
   - component: {fileID: 1105231024}
   - component: {fileID: 1105231023}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (23)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6406,7 +6456,7 @@ GameObject:
   - component: {fileID: 1119370640}
   - component: {fileID: 1119370639}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (13)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6539,7 +6589,7 @@ GameObject:
   - component: {fileID: 1131571918}
   - component: {fileID: 1131571917}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (17)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6672,7 +6722,7 @@ GameObject:
   - component: {fileID: 1143759206}
   - component: {fileID: 1143759205}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (22)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6805,7 +6855,7 @@ GameObject:
   - component: {fileID: 1205431797}
   - component: {fileID: 1205431796}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (15)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6938,7 +6988,7 @@ GameObject:
   - component: {fileID: 1230908348}
   - component: {fileID: 1230908347}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (11)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7071,7 +7121,7 @@ GameObject:
   - component: {fileID: 1235732310}
   - component: {fileID: 1235732309}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (32)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7204,7 +7254,7 @@ GameObject:
   - component: {fileID: 1239406395}
   - component: {fileID: 1239406394}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (4)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7337,7 +7387,7 @@ GameObject:
   - component: {fileID: 1241508477}
   - component: {fileID: 1241508476}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (17)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7470,7 +7520,7 @@ GameObject:
   - component: {fileID: 1268339114}
   - component: {fileID: 1268339113}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (12)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7603,7 +7653,7 @@ GameObject:
   - component: {fileID: 1320238682}
   - component: {fileID: 1320238681}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (4)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7736,7 +7786,7 @@ GameObject:
   - component: {fileID: 1327194306}
   - component: {fileID: 1327194305}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.36.32 PM
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7869,7 +7919,7 @@ GameObject:
   - component: {fileID: 1363589654}
   - component: {fileID: 1363589653}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (12)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8002,7 +8052,7 @@ GameObject:
   - component: {fileID: 1411267441}
   - component: {fileID: 1411267440}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (28)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8313,7 +8363,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -4.383108, y: -2.7959428}
+  - {x: -3.8604126, y: -2.795943}
+  - {x: -4.3932185, y: -2.7778552}
   - {x: -4.3940344, y: -2.1172245}
   - {x: -4.0039587, y: -2.118289}
   - {x: -0.81505364, y: -2.1197014}
@@ -8394,7 +8445,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 0.78797126, y: -2.8302534}
-  - {x: -3.8475957, y: -2.8022094}
+  - {x: -3.8567126, y: -2.7989323}
   - {x: -3.8570838, y: -2.4276826}
   - {x: -0.3839374, y: -2.4316165}
   - {x: 3.0806322, y: -2.3949726}
@@ -8625,7 +8676,7 @@ GameObject:
   - component: {fileID: 1454504854}
   - component: {fileID: 1454504853}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (7)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8758,7 +8809,7 @@ GameObject:
   - component: {fileID: 1475867854}
   - component: {fileID: 1475867853}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (24)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8891,7 +8942,7 @@ GameObject:
   - component: {fileID: 1482279695}
   - component: {fileID: 1482279694}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (27)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9024,7 +9075,7 @@ GameObject:
   - component: {fileID: 1529921727}
   - component: {fileID: 1529921726}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (20)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9157,7 +9208,7 @@ GameObject:
   - component: {fileID: 1545593270}
   - component: {fileID: 1545593269}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (8)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9290,7 +9341,7 @@ GameObject:
   - component: {fileID: 1557981156}
   - component: {fileID: 1557981155}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (7)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9423,7 +9474,7 @@ GameObject:
   - component: {fileID: 1568465581}
   - component: {fileID: 1568465580}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (13)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9543,6 +9594,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94, y: 0.44}
   m_EdgeRadius: 0
+--- !u!1001 &1594387438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_Name
+      value: ghost (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0742959
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.1373777
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
 --- !u!1 &1612989638
 GameObject:
   m_ObjectHideFlags: 0
@@ -9556,7 +9668,7 @@ GameObject:
   - component: {fileID: 1612989642}
   - component: {fileID: 1612989641}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (32)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9689,7 +9801,7 @@ GameObject:
   - component: {fileID: 1614491882}
   - component: {fileID: 1614491881}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (14)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9822,7 +9934,7 @@ GameObject:
   - component: {fileID: 1631982217}
   - component: {fileID: 1631982216}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (2)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10075,6 +10187,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1670579507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_Name
+      value: ghost (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.129933
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.097566
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
 --- !u!1 &1711458757
 GameObject:
   m_ObjectHideFlags: 0
@@ -10088,7 +10261,7 @@ GameObject:
   - component: {fileID: 1711458761}
   - component: {fileID: 1711458760}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (11)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10221,7 +10394,7 @@ GameObject:
   - component: {fileID: 1735085601}
   - component: {fileID: 1735085600}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (5)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10354,7 +10527,7 @@ GameObject:
   - component: {fileID: 1744530179}
   - component: {fileID: 1744530178}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (1)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10487,7 +10660,7 @@ GameObject:
   - component: {fileID: 1757389386}
   - component: {fileID: 1757389385}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (35)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10620,7 +10793,7 @@ GameObject:
   - component: {fileID: 1771323415}
   - component: {fileID: 1771323414}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (6)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10753,7 +10926,7 @@ GameObject:
   - component: {fileID: 1832590207}
   - component: {fileID: 1832590206}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (9)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10886,7 +11059,7 @@ GameObject:
   - component: {fileID: 1839487826}
   - component: {fileID: 1839487825}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (3)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11019,7 +11192,7 @@ GameObject:
   - component: {fileID: 1844128745}
   - component: {fileID: 1844128744}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (19)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11152,7 +11325,7 @@ GameObject:
   - component: {fileID: 1878823407}
   - component: {fileID: 1878823406}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.35.53 PM (1)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11285,7 +11458,7 @@ GameObject:
   - component: {fileID: 1912501797}
   - component: {fileID: 1912501796}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (18)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11418,7 +11591,7 @@ GameObject:
   - component: {fileID: 1913117199}
   - component: {fileID: 1913117198}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (3)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11551,7 +11724,7 @@ GameObject:
   - component: {fileID: 1922526378}
   - component: {fileID: 1922526377}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (25)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11684,7 +11857,7 @@ GameObject:
   - component: {fileID: 1928757342}
   - component: {fileID: 1928757341}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.40.37 PM (9)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11817,7 +11990,7 @@ GameObject:
   - component: {fileID: 1935266944}
   - component: {fileID: 1935266943}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (16)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12061,7 +12234,7 @@ GameObject:
   - component: {fileID: 2034759900}
   - component: {fileID: 2034759899}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (8)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12194,7 +12367,7 @@ GameObject:
   - component: {fileID: 2050130444}
   - component: {fileID: 2050130443}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (22)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12460,7 +12633,7 @@ GameObject:
   - component: {fileID: 2108646744}
   - component: {fileID: 2108646743}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 5.16.13 PM (4)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12593,7 +12766,7 @@ GameObject:
   - component: {fileID: 2114491952}
   - component: {fileID: 2114491951}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM (12)
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12726,7 +12899,7 @@ GameObject:
   - component: {fileID: 2142533695}
   - component: {fileID: 2142533694}
   m_Layer: 0
-  m_Name: Screen Shot 2023-05-08 at 4.26.36 PM
+  m_Name: walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12846,3 +13019,64 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.73, y: 0.44}
   m_EdgeRadius: 0
+--- !u!1001 &5302790096178619120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_Name
+      value: ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285353, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
