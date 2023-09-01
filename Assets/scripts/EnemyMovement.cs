@@ -1,34 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour {
-	//setting initial speeds
-	public float speed = 5.0f;
-	public Vector3 direction;
-    public float rotate = 90.0f;
-	
-	void Start() 
-	{
-		//initial directions of all the ghosts
-		direction = (new Vector3(Random.Range(-1.0f,1.0f), Random.Range(-1.0f,1.0f),0.0f)).normalized;
-		transform.Rotate(direction);
-	}
-	
-	void Update()
-	{
-		Vector3 newPos = transform.position + direction * speed * Time.deltaTime;
-		GetComponent<Rigidbody2D>().MovePosition (newPos); //calculating new position and moving ghost to said position
-	}
-	
-	void OnCollisionEnter (Collision col)
-	{
-		Debug.Log ("Collision");
-		if (col.gameObject.tag == "Wall")   
-		{
-			direction = col.contacts[0].normal;
-			direction = Quaternion.AngleAxis(rotate, Vector3.forward) * direction;
-			transform.rotation = Quaternion.LookRotation(direction);
+public class EnemyMovement : MonoBehaviour
+{
+    public float moveSpeed = 2f; // Adjust the speed of the enemy
+    public float changeDirectionInterval = 3f; // Adjust the interval for changing direction
+
+    private Vector2 currentDirection;
+    private float timer;
+
+    private void Start()
+    {
+        // Start by moving in a random horizontal or vertical direction
+        ChooseRandomDirection();
+    }
+
+    private void Update()
+    {
+        // Move the enemy in the current direction
+        transform.Translate(currentDirection * moveSpeed * Time.deltaTime);
+
+        // Update the timer
+        timer += Time.deltaTime;
+
+        // Change direction at the specified interval
+        if (timer >= changeDirectionInterval)
+        {
+            ChooseRandomDirection();
+            timer = 0f;
+        }
+    }
+
+    private void ChooseRandomDirection()
+    {
+        // Generate a random integer between 0 and 3 (0 for up, 1 for down, 2 for left, 3 for right)
+        int randomDirection = Random.Range(0, 4);
+
+        // Set the current direction based on the random integer
+        switch (randomDirection)
+        {
+            case 0:
+                currentDirection = Vector2.up;
+                break;
+            case 1:
+                currentDirection = Vector2.down;
+                break;
+            case 2:
+                currentDirection = Vector2.left;
+                break;
+            case 3:
+                currentDirection = Vector2.right;
+                break;
+        }
+    }
+
+	private void OnCollisionEnter2D(Collision2D collision) {
+        if(collision.gameObject.tag == "Wall") {
+			ChooseRandomDirection();
 		}
 	}
 }
