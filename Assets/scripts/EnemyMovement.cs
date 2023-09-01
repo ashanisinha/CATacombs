@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
+	//setting initial speeds
 	public float speed = 5.0f;
 	public Vector3 direction;
     public float rotate = 90.0f;
 	
 	void Start() 
 	{
+		//initial directions of all the ghosts
 		direction = (new Vector3(Random.Range(-1.0f,1.0f), Random.Range(-1.0f,1.0f),0.0f)).normalized;
 		transform.Rotate(direction);
 	}
@@ -16,7 +18,7 @@ public class EnemyMovement : MonoBehaviour {
 	void Update()
 	{
 		Vector3 newPos = transform.position + direction * speed * Time.deltaTime;
-		GetComponent<Rigidbody2D>().MovePosition (newPos);
+		GetComponent<Rigidbody2D>().MovePosition (newPos); //calculating new position and moving ghost to said position
 	}
 	
 	void OnCollisionEnter (Collision col)
