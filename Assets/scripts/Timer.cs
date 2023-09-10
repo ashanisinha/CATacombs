@@ -1,23 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour
+public class GameTimer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float gameDurationSeconds = 240f;
+    private float timer;
+
+    private void Start()
     {
-        Invoke("EndGame", 240.0f);
+        timer = 0f; // Initialize the timer to zero
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        // Increment the timer by the time passed since the last frame
+        timer += Time.deltaTime;
+
+        // Check if game is over
+        if (timer >= gameDurationSeconds)
+        {
+            EndGame();
+        }
     }
 
-    void EndGame() {
-        // ends game
-        // cuts to end scene
+    private void EndGame()
+    {
+        //SceneManager.LoadScene("DeathScene");
     }
 }

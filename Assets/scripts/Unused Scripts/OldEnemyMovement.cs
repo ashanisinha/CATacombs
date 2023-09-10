@@ -1,24 +1,24 @@
-using UnityEngine;
+/*using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
-    public float moveSpeed = 3.2f; // Adjust the speed of the enemy
+    public float moveSpeed = 2f; // Adjust the speed of the enemy
     public float changeDirectionInterval = 2f; // Adjust the interval for changing direction
 
-    public Rigidbody2D rb;
     private Vector2 currentDirection;
     private float timer;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         // Start by moving in a random horizontal or vertical direction
         ChooseRandomDirection();
     }
 
     private void Update()
     {
+        // Move the enemy in the current direction
+        transform.Translate(currentDirection * moveSpeed * Time.deltaTime);
+
         // Update the timer
         timer += Time.deltaTime;
 
@@ -29,13 +29,6 @@ public class EnemyMovement : MonoBehaviour
             timer = 0f;
         }
     }
-
-    private void FixedUpdate()
-    {
-        // Move the enemy using physics-based forces
-       rb.velocity = currentDirection * moveSpeed;
-    }
-
 
     private void ChooseRandomDirection()
     {
@@ -60,47 +53,26 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+	private void OnCollisionEnter2D(Collision2D collision) {
+        transform.Translate(-currentDirection * moveSpeed * Time.deltaTime);
+        // if(collision.gameObject.tag == "Wall") {
+        //    // transform.Translate(0 ,0 ,0);
+        //     ChooseRandomDirection();
+        //     transform.Translate(currentDirection * moveSpeed * Time.deltaTime);
+		// }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            currentDirection = -currentDirection;
-            return;
-        }
+        // if(collision.gameObject.tag == "Enemy") {
+        //     ChooseRandomDirection();
+        //     transform.Translate(currentDirection * moveSpeed * Time.deltaTime);
+        // }
 
-        int random = Random.Range(0,2);
-
-        if (currentDirection == Vector2.up || currentDirection == Vector2.down)
-        {
-            switch (random)
-            {
-                case 0:
-                    currentDirection = Vector2.right;
-                    break;
-
-                case 1:
-                    currentDirection = Vector2.left;
-                    break;
-            }
-        }
-
-        else
-        {
-            switch (random)
-            {
-                case 0:
-                    currentDirection = Vector2.up;
-                    break;
-
-                case 1:
-                    currentDirection = Vector2.down;
-                    break;
-            }
-        }
-
-        rb.velocity = currentDirection * moveSpeed;
-
-    }
-
+        // if(collision.gameObject.tag == "Key") {
+        //     transform.Translate(-currentDirection * moveSpeed * Time.deltaTime);
+        // } 
+        // else {
+        //     ChooseRandomDirection();
+        //     transform.Translate(currentDirection * moveSpeed * Time.deltaTime);
+        // }
+	}
 }
+*/

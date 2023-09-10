@@ -406,8 +406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebef18514289d42f39870986be6991de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  changeDirectionInterval: 2
+  moveSpeed: 3
+  changeDirectionInterval: 1
+  rb: {fileID: 0}
 --- !u!50 &81890102
 Rigidbody2D:
   serializedVersion: 4
@@ -1255,6 +1256,7 @@ GameObject:
   - component: {fileID: 193087040}
   - component: {fileID: 193087042}
   - component: {fileID: 193087043}
+  - component: {fileID: 193087044}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1428,6 +1430,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20a39fbbfc08d41248d9b7252c2e6381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &193087044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193087034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b6306ac30c342e4a64f26fc3897b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &214607331
@@ -3181,8 +3195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebef18514289d42f39870986be6991de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  changeDirectionInterval: 2
+  moveSpeed: 3
+  changeDirectionInterval: 1
+  rb: {fileID: 0}
 --- !u!50 &468287410
 Rigidbody2D:
   serializedVersion: 4
@@ -4804,6 +4819,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468287408}
     m_Modifications:
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: moveSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: changeDirectionInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285328, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_Radius
       value: 0.15439911
@@ -5933,8 +5956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebef18514289d42f39870986be6991de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  changeDirectionInterval: 2
+  moveSpeed: 3
+  changeDirectionInterval: 1
+  rb: {fileID: 0}
 --- !u!50 &977268491
 Rigidbody2D:
   serializedVersion: 4
@@ -9791,6 +9815,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468287408}
     m_Modifications:
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: moveSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: changeDirectionInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285328, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_Radius
       value: 0.15907212
@@ -9825,11 +9857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.97
+      value: -6.51
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.91
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10404,6 +10436,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468287408}
     m_Modifications:
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: moveSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: changeDirectionInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285328, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_Radius
       value: 0.1517045
@@ -10434,11 +10474,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.12
+      value: -4.01
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.13
+      value: -1.59
       objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285357, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11156,8 +11196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebef18514289d42f39870986be6991de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  changeDirectionInterval: 2
+  moveSpeed: 3
+  changeDirectionInterval: 1
+  rb: {fileID: 0}
 --- !u!50 &1773119670
 Rigidbody2D:
   serializedVersion: 4
@@ -13304,6 +13345,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: moveSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81890101, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
+      propertyPath: changeDirectionInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5302790096621285328, guid: 8b6dd2a12f0e74868b61dbbabaf7f26f, type: 3}
       propertyPath: m_Radius
       value: 0.15626855
