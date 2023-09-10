@@ -80,6 +80,12 @@ public class Player : MonoBehaviour
             
         }
 
+        if (collision.gameObject.tag == "Enemy") {
+            Destroy(gameObject);
+            Debug.Log("Death"); // UI to show death and ask to play again
+            
+        }
+
     }
 
 
